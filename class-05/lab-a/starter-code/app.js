@@ -162,17 +162,44 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
+    // im creating an arry
+    var questionFiveReturnArray = [];
+
+    // calculateing   first two values
+    var aTimesB = multiply((multArr[0]), (multArr[1]));
+    aTimesB = aTimesB[0];
+  
+    //  this part will calculate the  final outcome  and assign to index 0
+    var finalProduct = multiply(aTimesB, multArr[2]);
+    finalProduct = finalProduct[0];
+    questionFiveReturnArray[0] = finalProduct;
+  
+    // im  createing a  string and assigning it  to index 1
+    questionFiveReturnArray[1] = `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${finalProduct}.`
+    // return array
+    return questionFiveReturnArray;
+
+
+
 
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+ testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
 // You're done! Submit the link to the repo following the instructions in Canvas. Or, try out the stretch goal below...
 
 // Don't forget to create a new branch for your work on the next question, if you attempt it.
+
+
+
+
+
+
+
+
 
 /////////////////////////////////////
 /* STRETCH GOAL: Problem 6
